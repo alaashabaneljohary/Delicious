@@ -1,0 +1,746 @@
+/* Start Global Rules =================== */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.6s cubic-bezier(0.5, 0.2, 0.2, 1.1) 0s;
+    
+}
+h1 , h2 , h3 , h4 , h5 , h6
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem ;
+}
+p 
+{
+    color: #5f5950 ;
+    font-weight: 600;
+}
+@media screen and (min-width:991px) {
+    p 
+    {
+        width: 50%;
+        margin : 20px auto
+    }
+}
+:root
+{
+    --Color-Orange : #ffb03b ;
+    --Color-Text   : #5f5950 ;
+    --Color-Secondary : #aaa ;
+    --BgC-Footer  : #222     ;
+}
+span 
+{
+    color: var(--Color-Orange);
+}
+/* End Global Rules =================== */
+/* Start Section Header =============== */
+header
+{
+    background: url(../images/slide/slide-3.jpg) rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+}
+header .side-nav 
+{
+    color: var(--Color-Orange);
+    font-size: 25px;
+    position: fixed;
+    /* background-color: rgba(176, 10, 52, 0.129); */
+    width: 10%;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header .side-nav .nav-item .nav-link
+{
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+header .side-nav .nav-item .nav-link:hover 
+{
+    opacity: 0.5;
+}
+header  .numbers ul li 
+{
+    color: var(--Color-Secondary);
+}
+header  .numbers ul li i 
+{
+    color: var(--Color-Orange);
+}
+@media screen and (max-width:767px) {
+    .numbers ul 
+    { 
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        text-align: center;
+    }   
+}
+header .word 
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    height: 100vh;
+}
+@media screen and (min-width:767px) {
+
+    header .word  
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff; 
+    }
+}
+header .word h1 {
+    color: var(--Color-Orange);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+header .word span 
+{
+    color: #FFF;
+}
+header .word p 
+{
+   color: #FFF;
+   width: 80% ;
+
+}
+header .word  .btn
+{
+    border: 2px solid var(--Color-Orange);
+    border-radius: 6px;
+    background: transparent;
+    color: #FFFFFF  !important;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+.hvr-bounce-to-right:before
+{
+    background: var(--Color-Orange);
+}
+
+ .about-section 
+{
+    background-color: rgb(255, 255, 255);
+    width: 90% ;
+    height: 100vh;
+    margin-left: 10%;
+    position: absolute;
+    top: 0;
+    padding: 40px 0;
+    z-index: 999999999;
+    border-bottom: 5px solid #ffb03b;
+    overflow: hidden scroll;
+}
+.about-section .card 
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 15px;
+    min-height: 300px;
+    max-height: 300px;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 35px;
+    border-bottom: 4px solid #ffb03b;
+    transition: all 0.6s cubic-bezier(0.5, 0.2, 0.2, 1.1) 0s;
+}
+.about-section .card span 
+{
+    font-weight: 600;
+    font-size: 35px;
+}
+.about-section .card p 
+{
+    margin: 0;
+    width: 100%;
+}
+.hvr-rectangle-out:before
+{
+    background: var(--Color-Orange);
+}
+.about-section .card:hover span
+{
+  color: #FFF;
+}
+.about-section .card h2 {
+    color: #222;
+    font-size: 20px;
+}
+
+#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11 {
+   background: rgb(255, 255, 255);
+   left: 200%;
+   transition:all 0.8s ease ;
+   -webkit-transition:all 0.8s ease ;
+   -moz-transition:all 0.8s ease ;
+   -ms-transition:all 0.8s ease ;
+   -o-transition:all 0.8s ease ;
+   transition-delay: 0.7s;
+}
+#p1
+{
+    left: 0;
+}
+.menu-title 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-title a 
+{
+    color: rgb(255, 155, 8);
+    font-weight: 700;
+    font-size: 20px;
+}
+.menu-title span 
+{
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+.menu-desc 
+{
+    color: var(--Color-Secondary);
+    font-style: italic;
+}
+.menu li a 
+{
+    background: #fff;
+    border: 2px solid #ffb03b;
+    margin: 0 4px;
+    padding:  10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.menu li a:hover 
+{
+    color: #FFF;
+}
+
+.about-section .Specials h3 
+{
+    color: #222;
+    font-size: 18px !important;
+}
+.active 
+{
+    color: #ffb03b; 
+    font-size: 25px;
+    font-weight: 500;
+}
+.event 
+{
+    background: url(../images/event/events-bg.jpg)rgba(0, 0, 0, 0.8) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center!important;
+    background-blend-mode: multiply;
+    color: #FFF !important;
+}
+.event-box 
+{
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 3;
+    min-width: 100%;
+    text-align: left;
+    padding: 30px;
+}
+.event-desc h3 
+{
+    color: #ffb03b;
+    font-weight: 600;
+}
+.event-desc p 
+{
+    color:  #FFF;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+}
+.event-desc .price span 
+{
+    border-bottom: 2px solid #ffb03b;
+    font-size: 30px;
+    font-weight: 600;
+}
+.event-desc ul li 
+{
+    color: #FFF;
+    margin-bottom: 10px;
+}
+.event-desc ul li i 
+{
+    color: #ffb03b;
+    font-weight: 600;
+} 
+
+.hvr-radial-out:before
+{
+    z-index: 9;
+    background: #ffb13b5a;
+    cursor: pointer;
+}
+
+.Chefs
+{
+    background: url(../images/event/chefs-bg.jpg)#0f2027 !important;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    color: #FFF;
+    height: 100vh;
+
+    
+}
+.card-capition
+{
+    background-color: #FFF;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    bottom: -20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 10%;
+}
+.card-capition h5 
+{
+    font-family: 'Poppins', sans-serif;
+    color: #5f5950;
+    font-size: 16px;
+}
+.card-capition span 
+{
+    color: #5f5950;
+}
+
+.card-capition div i 
+{
+    color: #5f5950;
+    cursor: pointer;
+}
+.card-capition div i:hover{
+    color: #ffb03b;
+}
+.carousel-caption p 
+{
+    width: 100%;
+    font-size: 15px !important;
+    color: #FFF;
+}
+.testimonials
+{
+    background: url(../images/event/testimonials-bg.jpg) rgba(0, 0, 0, 0.8)!important;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    padding: 100px 0;
+}
+.carousel-item  img 
+{
+   position: relative;
+    width: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 5px solid #ffb03b;
+    padding: 10px;
+}
+
+.carousel-caption h5 
+{
+    color:  #FFF;  
+    font-size: 14px !important;
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-caption h6 
+{
+    color: #aaa;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.carousel-caption ul li i 
+{
+    color: #ffb03b;
+}
+.carousel-indicators [data-bs-target] {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #FFF!important;
+   
+}
+.carousel-caption {
+    position: relative;
+    left: 0%;
+    padding-top: 0px; 
+    flex-direction: column;
+   width: 70%;
+   margin: 20px 15%;
+    display: flex;
+}
+@media screen and (max-width:767px) {
+    .carousel-caption
+    {
+        width: 100% !important;
+        margin: 20px 0!important;
+    }
+}
+.contact .title h4 
+{
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.contact .title p {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    color: rgb(122, 115, 104);
+    padding: 0px 0px 0px 50px;
+    margin: 0px;
+}    
+.contact .icon-loction i
+{
+    color: #ffb03b;
+    background-color: rgb(255, 246, 232);
+    border-radius: 50%;
+    padding: 20px ;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    cursor: pointer;
+}
+.contact .icon-loction i:hover 
+{
+    background-color: #ffb03b;
+    color: #FFF;
+}
+.contacu-us
+{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 24px;
+    padding: 30px 30px 10px;
+    background: rgb(255, 255, 255);
+}
+.Footer 
+{
+    background-color: #222!important;
+    padding: 100px 0 !important;
+}
+.socialIcons a i 
+{
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    background: rgb(70, 66, 59);
+    padding: 11px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out 0s;
+}
+.socialIcons a i:hover 
+{
+    background-color: #ffb03b;
+
+}
+.footerend span
+{
+    font-family: 'Pacifico', cursive;
+    color: #ffb03b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #itemContainerBox 
+{
+  left: 0;
+  right: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.24);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#itemBoxGall
+{
+    background: url(../images/gallery/gallery-3.jpg);
+    background-color: tomato;
+    background-size: cover;
+    height: 400px;
+    width: 50%;
+    background-position: center center;
+    border: 4px solid #ffb03b;
+}
+ */
+
+
+
+
+
+
+
+
+/* End Section Header ================= */
+ /* .page {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.6s cubic-bezier(0.5, 0.2, 0.2, 1.1) 0s;
+    position: absolute;
+    top: 0;
+    
+}
+
+#p2,#p3,#p4,#p5,#p6,#p7 {
+    background: rgb(255, 255, 255);
+   left: 200%;
+}
+.about {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 85px 0px;
+    height: 100%;
+    border-bottom: 7px solid rgb(255, 155, 8);
+}
+header .about .title h2 
+{
+    color: var(--Color-Text);
+}
+header .about .title span 
+{
+    color: var(--Color-Orange);
+}
+header .about .card p 
+{
+
+    color: rgb(34, 34, 34);
+}
+header .about .card span
+{
+  color: var(--Color-Orange);
+  font-size: 3rem;
+  font-weight: 600;
+}
+header .about .card h3 
+{
+    color: #5f5950;
+}
+.hvr-rectangle-out:before
+{
+    background: var(--Color-Orange);
+}
+header .about .card:hover span 
+{
+    color: #FFF !important;
+}
+
+.menu-title 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card 
+{
+    width:90% ;
+    margin:  0 5%;
+}
+@media screen and (max-width:767px) {
+    .menu 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/* Start Page 4 */
+/* nav
+{
+    border-right: 3px solid #EEE;
+}
+nav ul li a 
+{
+    font-size: 20px;
+}
+nav ul li a.active 
+{
+    color: rgb(255, 155, 8) ;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: -2px;
+    border-right: 4px solid #ffb03b;
+}
+.event-custom 
+{
+    width: 100%!important;
+    height: 100%!important;
+    background: url(../images/event/events-bg.jpg) rgba(34, 34, 34,0.8) !important;
+    background-size: cover!important;
+    background-position: center center!important;
+    background-blend-mode: multiply!important;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+ 
+
+ <!-- Start Section Page 4 ==========================-->
+ <div id="p4" class="page">
+    <div class=" about">
+     <div class="title text-center">
+      <h4>Check our <span>Specials</span></h4>
+      <p>
+        Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+      </p>
+     </div>
+  <div class="container">
+  <div class="row py-5">
+   
+  
+  </div>
+  </div>
+    
+    </div>
+   </div> 
+ <!-- End Section Page 4 ===========================-->
+
+ <!-- Start Section Page 4 ==========================-->
+ <div id="p5" class="page">
+    <div class=" about event-custom">
+     <div class="title text-center">
+      <h4 class="text-light">Organize Your <span> Events </span> in our Restaurant</h4>
+      
+     </div>
+  <div class="container">
+  
+    <div class="event-box py-5 row">
+     <div class="col-lg-6 ">
+        <div class="event-img">
+            <img src="images/event/event-custom.jpg" class="w-100" alt="">
+        </div>
+     </div>
+    <div class="col-lg-6">
+    <div class="event-desc">
+        <h3>Custom Parties</h3>
+        <div class="price">
+        <p><span>$99</span></p>
+        </div>
+        <p class="fst-italic">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+        </p>
+        <ul class="list-unstyled">
+        <li><i class="fas fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        <li><i class="fas fa-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+        <li><i class="fas fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        </ul>
+        <p class="last-para">
+        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur
+        </p>
+    </div>
+      </div>
+  </div>
+  </div>
+    
+    </div>
+   </div> 
+ <!-- End Section Page 4 ===========================-->
+*/
